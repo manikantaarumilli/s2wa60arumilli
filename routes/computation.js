@@ -10,9 +10,9 @@ router.get('/', function(req, res, next) {
     if(value == 0)
     value=Math.random()
     res.write("Computes the values for Math.atan and math.cbrt function."+"\n")
-    res.write('Math.imul applied to '+value+" is "+Math.imul()(value)+"\n");
-    res.write('Math.log applied to '+value+" is "+Math.log()(value)+"\n");
-    res.end('Math.log10 applied to '+value+" is "+Math.log10()(value));
+    res.write('Math.imul applied to '+value+" is "+Math.imul(value)+"\n");
+    res.write('Math.log applied to '+value+" is "+Math.log(value)+"\n");
+    res.end('Math.log10 applied to '+value+" is "+Math.log10(value));
  });
 
 module.exports = router;
